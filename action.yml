@@ -1,0 +1,10 @@
+name: 'TBD auto versioning'
+description: 'Trunk based development auto versioning GitHub Action'
+inputs:
+  trunkBranch:
+    description: 'Trunk branch'
+    required: false
+    default: 'trunk'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

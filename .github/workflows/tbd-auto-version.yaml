@@ -1,0 +1,14 @@
+name: Auto versioning
+on:
+  push:
+    branches:
+      - trunk
+      - release/*
+concurrency: tbd-auto-versioning
+jobs:
+  increment-version:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: dmytro-buhaiets/tbd-auto-versioning@v1.0

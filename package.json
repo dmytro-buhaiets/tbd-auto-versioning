@@ -1,0 +1,27 @@
+{
+  "name": "tbd-auto-versioning",
+  "version": "1.0.0",
+  "description": "Trunk Based Development auto versioning GitHub Action",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "repository": "github:dmytro-buhaiets/tbd-auto-versioning",
+  "keywords": [
+    "trunk",
+    "development",
+    "auto",
+    "versioning",
+    "github",
+    "action"
+  ],
+  "author": "Dmytro Buhaiets <iscultas@protonmail.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0",
+    "@octokit/auth-action": "^1.3.3",
+    "@octokit/rest": "^18.11.2"
+  }
+}
